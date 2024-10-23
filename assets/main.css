@@ -1,0 +1,195 @@
+body {
+  background-color: #1D1F2B;
+  background: -webkit-radial-gradient(ellipse at bottom, #1D1F2B 0%, #0c0d13 100%); /* Safari */
+  background: -moz-radial-gradient(ellipse at bottom, #1D1F2B 0%, #0c0d13 100%); /* Firefox */
+  background: radial-gradient(ellipse at bottom, #1D1F2B 0%, #0c0d13 100%);
+  font-family: 'Kode Mono', monospace;
+  font-weight: bold;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px); /* Safari */
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid rgba(224, 185, 77, 0.2); /* Light color */
+  width: 100%;
+  min-height: 70%;
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out; /* Safari */
+  -moz-transition: opacity 0.5s ease-in-out; /* Firefox */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #151515;
+}
+
+.switch-button {
+	max-width: 400px;
+	height: 48px;
+	text-align: center;
+	will-change: transform;
+	z-index: 197 !important;
+	cursor: pointer;
+	-webkit-transition: .3s ease all; /* Safari */
+	-moz-transition: .3s ease all; /* Firefox */
+	transition: .3s ease all;
+	border: 1px solid #E0B94D; /* Primary color */
+  border-radius: 1.30rem !important;
+}
+
+.switch-button-case {
+	display: inline-block;
+	background: none;
+	width: 50%;
+	height: 100%;
+	color: #E0B94D;
+	position: relative;
+	border: none;
+	-webkit-transition: .3s ease all; /* Safari */
+	-moz-transition: .3s ease all; /* Firefox */
+	transition: .3s ease all;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-bottom: 1px;
+  font-size: 0.9rem!important;
+}
+
+.switch-button-case:hover {
+	color: grey;
+	cursor: pointer;
+}
+
+.switch-button-case:focus {
+	outline: none;
+}
+
+.switch-button .active {
+	color: #1D1F2B;
+	background-color: #E0B94D;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	z-index: -1;
+	-webkit-transition: .3s ease-out all; /* Safari */
+	-moz-transition: .3s ease-out all; /* Firefox */
+	transition: .3s ease-out all;
+  border-radius: 1.25rem !important;
+}
+
+.switch-button .active-case {
+	color: #1D1F2B;
+}
+
+.btn {
+  border-radius: 1.25rem !important;
+  font-weight: 300;
+}
+
+/* Fade transition */
+.fade-enter-active, .fade-leave-active {
+  -webkit-transition: opacity 0.5s ease; /* Safari */
+  -moz-transition: opacity 0.5s ease; /* Firefox */
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
+
+/* Slide transition for column switching */
+.slide-enter-active, .slide-leave-active {
+  -webkit-transition: all 0.6s ease; /* Safari */
+  -moz-transition: all 0.6s ease; /* Firefox */
+  transition: all 0.6s ease;
+}
+
+.slide-enter, .slide-leave-to {
+  opacity: 0;
+  -webkit-transform: translateX(10px); /* Safari */
+  -moz-transform: translateX(10px); /* Firefox */
+  transform: translateX(10px);
+}
+
+.form-control {
+  background-color: transparent;
+  border: 1px solid #E0B94D;
+  color: #E0B94D;
+}
+
+.animated-width {
+  -webkit-transition: width 0.5s ease; /* Safari */
+  -moz-transition: width 0.5s ease; /* Firefox */
+  transition: width 0.5s ease;
+}
+
+@media (min-width: 768px) {
+  .full-width {
+    width: 100%; /* Equivalent to col-12 */
+  }
+
+  .half-width {
+    width: 50%; /* Equivalent to col-md-6 */
+  }
+}
+
+.fade-in {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in; /* Safari */
+  -moz-transition: opacity 0.5s ease-in; /* Firefox */
+  transition: opacity 0.5s ease-in;
+}
+
+.hidden {
+  opacity: 0;
+  width: 0;
+  -webkit-transition: opacity 0.5s ease-out; /* Safari */
+  -moz-transition: opacity 0.5s ease-out; /* Firefox */
+  transition: opacity 0.5s ease-out;
+}
+
+/* Fade transition for form switching */
+.fade-enter-active, .fade-leave-active {
+  -webkit-transition: opacity 0.5s ease; /* Safari */
+  -moz-transition: opacity 0.5s ease; /* Firefox */
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active in versions below 2.1.8 */ {
+  opacity: 0;
+}
+
+.modal-dialog {
+  min-width: 60%!important;
+}
+
+.modal-content {
+  border-radius: 1.25rem !important;
+}
+
+#mainContainer {
+  min-height: 100vh;
+}

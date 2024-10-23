@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiganbet - Güvenli Bahis ve Casino Platformu</title>
+    <meta name="keywords" content="Holiganbet, online bahis, casino oyunları, güvenli bahis, canlı bahis, spor bahisleri">
+    <meta name="author" content="Holiganbet Team">
+    <meta name="description" content="Holiganbet, spor bahisleri, canlı bahisler ve casino oyunları sunan güvenli bir platform. Hemen kayıt olun ve kazanmaya başlayın!">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Holiganbet - Güvenli Bahis ve Casino Platformu">
+    <meta property="og:description" content="Holiganbet ile spor bahisleri, canlı bahisler ve casino oyunlarında kazanmaya başlayın!">
+    <meta property="og:url" content="https://www.holiganbet.com">
+    <meta property="og:image" content="https://www.holiganbet.com/assets/logo.png">
+    <meta property="og:site_name" content="Holiganbet">
+    <meta http-equiv="Content-Language" content="tr">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    
+    <!-- Schema.org Organization Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Holiganbet",
+        "url": "https://www.holiganbet.com",
+        "logo": "https://www.holiganbet.com/assets/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+90 212 990 0729",
+            "contactType": "Customer Support",
+            "email": "destek@holiganbet.com",
+            "availableLanguage": ["Turkish", "English"]
+        },
+        "sameAs": [
+            "https://t.me/holigantg",
+            "https://twitter.com/holigan_guncel"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Muradiye, Şair Nazım Sk. no:4",
+            "addressLocality": "İstanbul",
+            "addressCountry": "Turkey"
+        }
+    }
+    </script>
+
+    <!-- Schema.org LocalBusiness Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Holiganbet",
+        "image": "https://www.holiganbet.com/assets/logo.png",
+        "telephone": "+90 212 990 0729",
+        "email": "destek@holiganbet.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Muradiye, Şair Nazım Sk. no:4",
+            "addressLocality": "İstanbul",
+            "addressCountry": "Turkey"
+        },
+        "url": "https://www.holiganbet.com",
+        "priceRange": "$$$",
+        "openingHours": "Mo-Su 00:00-23:59",
+        "currenciesAccepted": "TRY, USD, EUR",
+        "paymentAccepted": "Credit Card, Bank Transfer, Cryptocurrency, E-Wallets",
+        "servesCuisine": "Online Betting and Casino Games"
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "1. Holiganbet nedir?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Holiganbet, kullanıcılarına çevrimiçi bahis ve casino oyunları sunan bir platformdur. Spor bahisleri, canlı bahisler, slot oyunları ve masa oyunları gibi birçok seçeneğe sahiptir."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "2. Holiganbet’e nasıl kayıt olabilirim?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Kayıt işlemi için ana sayfamızdaki \"Kayıt Ol\" butonuna tıklayın ve gerekli bilgileri doldurun. E-posta adresinize bir doğrulama maili gönderilecektir, bu maili onaylayarak üyeliğinizi aktif hale getirebilirsiniz."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "3. Yaş sınırlaması var mı?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Evet, Holiganbet'e kayıt olabilmek için en az 18 yaşında olmanız gerekmektedir."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "4. Hesabımı nasıl doğrularım?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hesabınızı doğrulamak için kimlik, adres bilgisi gibi belgelerinizi yükleyerek hesabınızın doğrulama sürecini başlatabilirsiniz."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "5. Holiganbet’te hangi para birimleri kullanılabilir?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Holiganbet, TRY, USD, EUR gibi çeşitli para birimlerini desteklemektedir. Para yatırma işlemi sırasında istediğiniz para birimini seçebilirsiniz."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "6. Para yatırma yöntemleri nelerdir?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Kredi kartı, banka havalesi, kripto para ve çeşitli e-cüzdanlar (Papara, PayFix gibi) ile para yatırabilirsiniz."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "7. Para çekme işlemleri nasıl yapılır?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Para çekme talebinde bulunmak için hesabınıza giriş yaparak \"Hesabım\" bölümünden \"Para Çekme\" seçeneğini seçmeniz yeterlidir. Talep ettikten sonra işlemler 24 saat içinde sonuçlandırılır."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "8. Para çekme işleminde minimum limit var mı?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Evet, minimum para çekme limiti her ödeme yöntemi için farklı olabilir. Genel olarak minimum 100 TL’lik bir para çekme limiti uygulanmaktadır."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "9. Holiganbet güvenli mi?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Evet, Holiganbet, kullanıcıların bilgilerini korumak için SSL şifreleme ve iki aşamalı doğrulama gibi güvenlik önlemleri uygular. Ayrıca, Curacao lisansına sahiptir."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "10. Bonus ve promosyonlar nedir?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Holiganbet, yeni üyeler için hoş geldin bonusları, para yatırma bonusları ve bedava dönüşler gibi promosyonlar sunmaktadır. Güncel bonuslar için promosyonlar sayfasını ziyaret edebilirsiniz."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "11. Hoş geldin bonusu nasıl kullanılır?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hoş geldin bonusu, kayıt olduktan sonra ilk para yatırma işleminizi yaparken otomatik olarak hesabınıza tanımlanır. Bu bonusu kullanarak casino oyunlarında veya bahislerde şansınızı deneyebilirsiniz."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "12. Bonus çevrim şartları nelerdir?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Bonuslar, belirli çevrim şartlarına tabidir. Örneğin, aldığınız bonusun 10 katı kadar bahis yapmanız gerekebilir. Bonus şartları her promosyonda ayrıntılı olarak belirtilir."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "13. Holiganbet mobil uyumlu mu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Evet, Holiganbet’in mobil uyumlu web sitesi sayesinde akıllı telefon ve tablet üzerinden kolayca erişim sağlayabilirsiniz. Ayrıca, mobil cihazlar için optimize edilmiş oyunları da oynayabilirsiniz."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "14. Canlı bahis nasıl oynanır?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Canlı bahis, devam eden maçlara anlık olarak bahis yapma imkanı sunar. Maçın gidişatına göre bahis oranları değişir ve oyunu canlı izlerken bahis yapabilirsiniz."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "15. Müşteri desteğine nasıl ulaşırım?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Holiganbet, 7/24 canlı destek hizmeti sunmaktadır. Ayrıca, e-posta üzerinden destek@holiganbet.com adresinden bizimle iletişime geçebilirsiniz."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "16. Hesabımı nasıl kapatabilirim?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hesabınızı kapatmak isterseniz, müşteri hizmetleri ile iletişime geçerek talebinizi iletebilirsiniz. Hesabınızı kalıcı olarak kapatma seçeneği de sunulmaktadır."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "17. Oyun geçmişimi nasıl görüntüleyebilirim?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hesabınıza giriş yaptıktan sonra \"Hesap Geçmişi\" bölümünden oynadığınız oyunları, yatırdığınız ve çektiğiniz paraları görüntüleyebilirsiniz."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "18. Sorun yaşadığımda ne yapmalıyım?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Herhangi bir sorunla karşılaştığınızda, ilk olarak canlı destek ekibimizle iletişime geçebilirsiniz. Ekibimiz sorununuzu hızlı bir şekilde çözmek için her zaman hazırdır."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "19. Oyunlar adil mi?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Evet, Holiganbet'teki tüm oyunlar lisanslı ve sertifikalı oyun sağlayıcıları tarafından sağlanmaktadır. Rastgele sayı üreteçleri (RNG) ile oyun sonuçları tamamen şansa dayalıdır."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "20. Sorumlu oyun politikası nedir?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Holiganbet, sorumlu oyun politikalarına sıkı sıkıya bağlıdır. Kumar alışkanlığınızın kontrol dışı olduğuna inanıyorsanız, günlük, haftalık veya aylık harcama limitleri koyabilir ve kendinizi kısıtlayabilirsiniz."
+              }
+            }
+          ]
+        }
+    </script>        
+</head>
+<body>
+    <section id="app" class="hero vh-100 overflow-hidden">
+        <canvas id="canvas" class="position-absolute"></canvas>
+        <div class="container text-white position-relative vh-100 d-flex flex-column align-items-center justify-content-center">
+            <header class="d-flex flex-column flex-md-row align-items-center justify-content-start justify-content-md-between align-items-md-center py-md-5 w-100">
+                <div class="logo animate__animated animate__fadeInDown" style="max-width: 150px;">
+                    <img src="assets/logo.png" alt="Holiganbet logo - Casino Sitesi" style="width: 100%;">
+                </div>
+                <div class="animate__animated animate__fadeInDown d-none d-md-block text-white">
+                    <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#faqModal">SSS</a> | 
+                    <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#termsModal">Hizmet Şartları</a> | 
+                    <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#privacyModal">Gizlilik Politikası</a>
+                </div>
+            </header>
+    
+            <!-- Steps Transition -->
+            <div class="flex-grow-1 w-100 d-flex p-5">
+                <div class="glassmorphism d-flex align-items-center flex-wrap justify-content-center">
+                    <transition name="fade" @after-leave="handleAfterLeave">
+                        <div class="d-flex row p-0 w-100" v-if="step" :key="step"> <!-- Key for unique steps -->
+                            <transition name="slide" mode="out-in"> <!-- Add mode="out-in" -->
+                                <div v-bind:class="this.formVisible ? 'col-md-6' : ''" class="d-flex align-items-center col-12 pe-md-2 justify-content-center" :key="step" :class="[formVisible ? 'half-width animated-width' : 'full-width animated-width']">
+                                    <!-- Step 1 -->
+                                    <div v-if="step === 1" class="text-center">
+                                        <h1 class="display-6">Holiganbet'in güvenli bahis dünyasında kazanmaya hazır mısın?</h1>
+                                        <button class="btn btn-lg btn-outline-light mt-4" @click="startNextStep">Hazırım!</button>
+                                    </div>
+                                    <!-- Step 2 -->
+                                    <div v-if="step === 2" class="text-center">
+                                        <h3 class="display-6">Holiganbet hep yanında!</h3>
+                                    </div>
+                                    <!-- Step 3 -->
+                                    <div v-if="step === 3" class="text-center align-items-center justify-content-center">
+                                        <h3>Müşteri desteği mi yoksa bonus mu istersiniz?</h3>
+                                        <div class="switch-button d-flex p-0 mt-4 m-auto">
+                                            <button class="switch-button-case left" :class="{ 'active-case': selectedForm === 'support' }" @click="switchLeft">
+                                                Müşteri Desteği
+                                            </button>
+                                            <button class="switch-button-case right" :class="{ 'active-case': selectedForm === 'bonus' }" @click="switchRight">
+                                                Bonus
+                                            </button>
+                                            <span class="active" :class="this.selectedForm == null ? 'd-none': ''" :style="{ left: selectedForm === 'support' ? '0%' : '50%' }"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </transition>
+                    
+                            <!-- Form Container -->
+                            <transition name="fade" mode="out-in"> <!-- Add mode="out-in" to ensure smoother transitions -->
+                                <div class="ps-md-2 col-12 col-md-6 mt-4 mt-0 fade-in" :class="{'hidden': !showForm}"  v-if="formVisible" :key="selectedForm">
+                                    <!-- Customer Support Form -->
+                                    <transition name="fade" mode="out-in">
+                                    <div v-if="selectedForm === 'support'">
+                                        <div v-if="!formFilled" class="main-form mt-3" id="formContainer">
+                                            <div class="form-group mb-3">
+                                                <select name="ProcessRequestType" class="form-control" id="dropdown">
+                                                    <option value="" disabled selected>Lütfen yapmak istediğiniz işlemi seçiniz</option>
+                                                    <option value="1">Döküman Onaylatma (Bitcoin)</option>
+                                                    <option value="2">Hesap Onaylatma</option>
+                                                    <option value="3">E-Mail Güncelleme</option>
+                                                    <option value="4">Telefon Güncelleme</option>
+                                                    <option value="5">Hesap Kapatma İşlemi</option>
+                                                    <option value="6">Hesap bilgilerimi unuttum</option>
+                                                </select>
+                                                <small class="text-white errorDropdown"></small>
+                                            </div>
+                                            <hr class="text-white">
+                                            <div class="form-group mb-3">
+                                                <input type="text" name="username" id="username" class="form-control" placeholder="Üye Adınız">
+                                                <small class="text-white errorUsername"></small>
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <input type="text" name="FirstName" id="name" class="form-control" placeholder="Adınız">
+                                                <small class="text-white errorName"></small>
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <input type="text" name="LastName" id="surname" class="form-control" placeholder="Soyadınız">
+                                                <small class="text-white errorSurname"></small>
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <input type="text" name="phone" id="phone" class="form-control" placeholder="Telefon">
+                                                <small class="text-white errorPhone"></small>
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <input type="text" name="email" id="email" class="form-control" placeholder="E-Posta">
+                                                <small class="text-white errorEmail"></small>
+                                            </div>
+                                            <div class="form-group text-end">
+                                                <button class="btn btn-outline-light btn-lg" @click.prevent="validateForm">İLERİ</button>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Success Message -->
+                                        <transition name="fade"> <!-- Success message transition -->
+                                            <div v-if="formFilled" id="successMessage" class="text-white text-center">
+                                                <h3>Başarılı! Formunuz gönderildi.</h3>
+                                                <p>İşleminiz başarıyla tamamlandı. Teşekkür ederiz!</p>
+                                            </div>
+                                        </transition>
+                                    </div>
+                                </transition>
+                    
+                                    <!-- Bonus Form -->
+                                    <transition name="fade" mode="out-in">
+                                        <div v-if="selectedForm === 'bonus'">
+                                            <div v-if="!formFilled2">
+                                                <div class="mb-3">
+                                                    <label for="bonusEmail" class="form-label">E-posta Adresiniz</label>
+                                                    <input type="email" class="form-control" id="bonusEmail" placeholder="E-Posta">
+                                                    <small class="text-white errorEmail2"></small>
+                                                </div>
+                                                <div class="form-group text-end">
+                                                    <button type="submit" class="btn btn-outline-light btn-lg" @click.prevent="validateForm2">Bonusu Talep Et</button>
+                                                </div>
+                                            </div>
+                                            <transition name="fade"> <!-- Success message transition -->
+                                                <div v-if="formFilled2" id="successMessage2" class="text-white text-center">
+                                                    <h3>Başarılı! Formunuz gönderildi.</h3>
+                                                    <p>İşleminiz başarıyla tamamlandı. Teşekkür ederiz!</p>
+                                                </div>
+                                            </transition>
+                                        </div>
+                                    </transition>
+                                </div>
+                            </transition>
+                        </div>
+                    </transition>                                  
+                </div>
+            </div>
+            <footer>
+                <div class="animate__animated animate__fadeInDown d-block d-md-none text-white mb-3">
+                    <p class="text-center">
+                        <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#faqModal">SSS</a> | 
+                        <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#termsModal">Hizmet Şartları</a> | 
+                        <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#privacyModal">Gizlilik Politikası</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </section>    
+  <!-- FAQ Modal -->
+<div class="modal fade" id="faqModal" tabindex="-1" aria-labelledby="faqModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="faqModalLabel">Sıkça Sorulan Sorular (SSS)</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6>1. Holiganbet nedir?</h6>
+                <p>Holiganbet, kullanıcılarına çevrimiçi bahis ve casino oyunları sunan bir platformdur. Spor bahisleri, canlı bahisler, slot oyunları ve masa oyunları gibi birçok seçeneğe sahiptir.</p>
+
+                <h6>2. Holiganbet’e nasıl kayıt olabilirim?</h6>
+                <p>Kayıt işlemi için ana sayfamızdaki "Kayıt Ol" butonuna tıklayın ve gerekli bilgileri doldurun. E-posta adresinize bir doğrulama maili gönderilecektir, bu maili onaylayarak üyeliğinizi aktif hale getirebilirsiniz.</p>
+
+                <h6>3. Yaş sınırlaması var mı?</h6>
+                <p>Evet, Holiganbet'e kayıt olabilmek için en az 18 yaşında olmanız gerekmektedir.</p>
+
+                <h6>4. Hesabımı nasıl doğrularım?</h6>
+                <p>Hesabınızı doğrulamak için kimlik, adres bilgisi gibi belgelerinizi yükleyerek hesabınızın doğrulama sürecini başlatabilirsiniz.</p>
+
+                <h6>5. Holiganbet’te hangi para birimleri kullanılabilir?</h6>
+                <p>Holiganbet, TRY, USD, EUR gibi çeşitli para birimlerini desteklemektedir. Para yatırma işlemi sırasında istediğiniz para birimini seçebilirsiniz.</p>
+
+                <h6>6. Para yatırma yöntemleri nelerdir?</h6>
+                <p>Kredi kartı, banka havalesi, kripto para ve çeşitli e-cüzdanlar (Papara, PayFix gibi) ile para yatırabilirsiniz.</p>
+
+                <h6>7. Para çekme işlemleri nasıl yapılır?</h6>
+                <p>Para çekme talebinde bulunmak için hesabınıza giriş yaparak "Hesabım" bölümünden "Para Çekme" seçeneğini seçmeniz yeterlidir. Talep ettikten sonra işlemler 24 saat içinde sonuçlandırılır.</p>
+
+                <h6>8. Para çekme işleminde minimum limit var mı?</h6>
+                <p>Evet, minimum para çekme limiti her ödeme yöntemi için farklı olabilir. Genel olarak minimum 100 TL’lik bir para çekme limiti uygulanmaktadır.</p>
+
+                <h6>9. Holiganbet güvenli mi?</h6>
+                <p>Evet, Holiganbet, kullanıcıların bilgilerini korumak için SSL şifreleme ve iki aşamalı doğrulama gibi güvenlik önlemleri uygular. Ayrıca, Curacao lisansına sahiptir.</p>
+
+                <h6>10. Bonus ve promosyonlar nedir?</h6>
+                <p>Holiganbet, yeni üyeler için hoş geldin bonusları, para yatırma bonusları ve bedava dönüşler gibi promosyonlar sunmaktadır. Güncel bonuslar için promosyonlar sayfasını ziyaret edebilirsiniz.</p>
+
+                <h6>11. Hoş geldin bonusu nasıl kullanılır?</h6>
+                <p>Hoş geldin bonusu, kayıt olduktan sonra ilk para yatırma işleminizi yaparken otomatik olarak hesabınıza tanımlanır. Bu bonusu kullanarak casino oyunlarında veya bahislerde şansınızı deneyebilirsiniz.</p>
+
+                <h6>12. Bonus çevrim şartları nelerdir?</h6>
+                <p>Bonuslar, belirli çevrim şartlarına tabidir. Örneğin, aldığınız bonusun 10 katı kadar bahis yapmanız gerekebilir. Bonus şartları her promosyonda ayrıntılı olarak belirtilir.</p>
+
+                <h6>13. Holiganbet mobil uyumlu mu?</h6>
+                <p>Evet, Holiganbet’in mobil uyumlu web sitesi sayesinde akıllı telefon ve tablet üzerinden kolayca erişim sağlayabilirsiniz. Ayrıca, mobil cihazlar için optimize edilmiş oyunları da oynayabilirsiniz.</p>
+
+                <h6>14. Canlı bahis nasıl oynanır?</h6>
+                <p>Canlı bahis, devam eden maçlara anlık olarak bahis yapma imkanı sunar. Maçın gidişatına göre bahis oranları değişir ve oyunu canlı izlerken bahis yapabilirsiniz.</p>
+
+                <h6>15. Müşteri desteğine nasıl ulaşırım?</h6>
+                <p>Holiganbet, 7/24 canlı destek hizmeti sunmaktadır. Ayrıca, e-posta üzerinden destek@holiganbet.com adresinden bizimle iletişime geçebilirsiniz.</p>
+
+                <h6>16. Hesabımı nasıl kapatabilirim?</h6>
+                <p>Hesabınızı kapatmak isterseniz, müşteri hizmetleri ile iletişime geçerek talebinizi iletebilirsiniz. Hesabınızı kalıcı olarak kapatma seçeneği de sunulmaktadır.</p>
+
+                <h6>17. Oyun geçmişimi nasıl görüntüleyebilirim?</h6>
+                <p>Hesabınıza giriş yaptıktan sonra "Hesap Geçmişi" bölümünden oynadığınız oyunları, yatırdığınız ve çektiğiniz paraları görüntüleyebilirsiniz.</p>
+
+                <h6>18. Sorun yaşadığımda ne yapmalıyım?</h6>
+                <p>Herhangi bir sorunla karşılaştığınızda, ilk olarak canlı destek ekibimizle iletişime geçebilirsiniz. Ekibimiz sorununuzu hızlı bir şekilde çözmek için her zaman hazırdır.</p>
+
+                <h6>19. Oyunlar adil mi?</h6>
+                <p>Evet, Holiganbet'teki tüm oyunlar lisanslı ve sertifikalı oyun sağlayıcıları tarafından sağlanmaktadır. Rastgele sayı üreteçleri (RNG) ile oyun sonuçları tamamen şansa dayalıdır.</p>
+
+                <h6>20. Sorumlu oyun politikası nedir?</h6>
+                <p>Holiganbet, sorumlu oyun politikalarına sıkı sıkıya bağlıdır. Kumar alışkanlığınızın kontrol dışı olduğuna inanıyorsanız, günlük, haftalık veya aylık harcama limitleri koyabilir ve kendinizi kısıtlayabilirsiniz.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Terms of Service Modal -->
+<div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="termsModalLabel">Hizmet Şartları</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6>1. Giriş</h6>
+                <p>Bu Hizmet Şartları, Holiganbet kullanıcılarının platformda yapabileceği işlemler, hakları ve yükümlülükleri ile ilgilidir. Platformu kullanarak bu şartları kabul etmiş olursunuz. Holiganbet, Curacao lisansı altında faaliyet göstermektedir.</p>
+
+                <h6>2. Hesap Oluşturma</h6>
+                <p>Holiganbet'e hesap oluşturmak için en az 18 yaşında olmanız gerekmektedir. Kayıt sırasında verdiğiniz tüm bilgilerin doğru, eksiksiz ve güncel olduğundan emin olmalısınız. Yanlış bilgi verilmesi durumunda hesabınız askıya alınabilir veya kapatılabilir.</p>
+
+                <h6>3. Hesap Güvenliği</h6>
+                <p>Hesap bilgilerinizin gizliliğinden siz sorumlusunuz. Başka bir kişinin hesabınızı kullanmasına izin vermemelisiniz. Hesap bilgilerinizin yetkisiz kişilerce kullanılmasından doğabilecek zararlardan sorumlu tutulamazsınız.</p>
+
+                <h6>4. Para Yatırma ve Çekme</h6>
+                <p>Holiganbet'te para yatırma ve çekme işlemleri, kullanıcıların seçtiği yöntemlere bağlı olarak değişiklik gösterebilir. Minimum para çekme limitleri ve işlem süreleri ödeme sağlayıcısına göre farklılık gösterebilir. Para yatırma işlemi için geçerli olan minimum tutar 100 TL'dir. Kullanıcılar, para çekme taleplerinde kimlik doğrulaması talep edilebilir.</p>
+
+                <h6>5. Bonuslar ve Promosyonlar</h6>
+                <p>Bonuslar ve promosyonlar, Holiganbet tarafından kullanıcılara sunulan ödüller olup, belirli çevrim şartlarına tabidir. Bonuslar, yalnızca belirtilen oyunlarda kullanılabilir ve çekilemez. Bonuslar ile kazanılan ödüller, belirlenen çevrim şartları tamamlanmadan çekilemez.</p>
+
+                <h6>6. Yasa Dışı Faaliyetler</h6>
+                <p>Holiganbet, yasadışı bahis, kara para aklama ve dolandırıcılık gibi faaliyetleri önlemek amacıyla tüm hesapları düzenli olarak denetleyebilir. Şüpheli faaliyet tespit edilmesi durumunda hesaplar derhal askıya alınabilir veya kapatılabilir ve bakiye sıfırlanabilir.</p>
+
+                <h6>7. Sorumlu Oyun</h6>
+                <p>Holiganbet, sorumlu oyun politikalarına bağlıdır ve kullanıcıların oyun alışkanlıklarını kontrol etmelerine olanak tanır. Kullanıcılar, günlük, haftalık veya aylık bahis limitleri koyabilir. Ayrıca, kullanıcılar hesaplarını geçici veya kalıcı olarak kapatma talebinde bulunabilirler.</p>
+
+                <h6>8. Gizlilik ve Güvenlik</h6>
+                <p>Holiganbet, kullanıcıların kişisel bilgilerini korumak için en üst düzeyde güvenlik önlemleri uygular. Kullanıcıların bilgileri, üçüncü şahıslarla yalnızca yasal gereklilikler ve hizmet sağlama amacıyla paylaşılabilir.</p>
+
+                <h6>9. Çerez Politikası</h6>
+                <p>Holiganbet, kullanıcı deneyimini geliştirmek amacıyla çerezler kullanır. Çerezler, tarayıcı tercihlerinizi kaydederek siteye tekrar giriş yaptığınızda kişiselleştirilmiş bir deneyim sunar.</p>
+
+                <h6>10. Fesih ve Hesap Kapatma</h6>
+                <p>Kullanıcılar, istedikleri zaman hesaplarını kapatma talebinde bulunabilirler. Holiganbet, bu talebi değerlendirip hesabı kalıcı olarak kapatabilir. Holiganbet, ayrıca Hizmet Şartlarına aykırı hareket eden hesapları feshetme hakkını saklı tutar.</p>
+
+                <h6>11. Değişiklik Hakkı</h6>
+                <p>Holiganbet, bu Hizmet Şartları üzerinde zaman zaman değişiklik yapma hakkını saklı tutar. Kullanıcılar, bu değişiklikleri kabul ederek platformu kullanmaya devam ederler.</p>
+
+                <h6>12. Uyuşmazlıklar</h6>
+                <p>Hizmet Şartları’ndan kaynaklanabilecek uyuşmazlıklar, Curacao yasalarına göre çözüme kavuşturulacaktır. Her iki taraf da yasal süreçlere saygı gösterecektir.</p>
+                
+                <h6>13. İptal ve Erteleme</h6>
+                <p>Holiganbet, herhangi bir teknik hata, sistem arızası ya da dolandırıcılık şüphesi durumunda bahisleri iptal etme ya da erteleme hakkını saklı tutar. Bu gibi durumlarda, kullanıcıya bilgi verilir.</p>
+
+                <h6>14. Oyunların Adilliği</h6>
+                <p>Holiganbet’te sunulan tüm oyunlar, lisanslı oyun sağlayıcılarından temin edilir ve rastgele sayı üreteçleri (RNG) kullanılarak adil sonuçlar sunar. Her oyunun sonuçları şansa dayalıdır ve müdahale edilemez.</p>
+
+                <h6>15. Canlı Bahis Kuralları</h6>
+                <p>Canlı bahisler, devam eden spor karşılaşmalarına yapılan bahislerdir. Bahis oranları, maçın seyrine göre anlık olarak değişir. Canlı bahislerde yapılan tüm bahisler, sonucun kesinleşmesiyle birlikte hesaplanır ve kullanıcıya yansıtılır.</p>
+
+                <h6>16. Yasal Uyarı</h6>
+                <p>Bu Hizmet Şartları, Holiganbet ve kullanıcılar arasındaki ilişkileri düzenler ve yasal bir sözleşme teşkil eder. Herhangi bir ihtilaf durumunda, bu şartlar geçerli olacaktır.</p>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- Privacy Policy Modal -->
+<div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="privacyModalLabel">Gizlilik Politikası</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6>1. Giriş</h6>
+                <p>Holiganbet olarak gizliliğinize büyük önem veriyoruz. Bu gizlilik politikası, hangi bilgileri topladığımızı, bu bilgileri nasıl kullandığımızı ve nasıl koruduğumuzu açıklamaktadır. Bu siteyi kullanarak, gizlilik politikamızda belirtilen şartları kabul etmiş olursunuz.</p>
+
+                <h6>2. Toplanan Bilgiler</h6>
+                <p>Kayıt sırasında kullanıcı adı, e-posta adresi, telefon numarası ve diğer kişisel bilgilerinizi topluyoruz. Ayrıca, site kullanımınızı izlemek amacıyla IP adresi, tarayıcı bilgileri ve çerezler aracılığıyla teknik veriler toplanmaktadır.</p>
+
+                <h6>3. Bilgilerin Kullanımı</h6>
+                <p>Topladığımız kişisel bilgiler aşağıdaki amaçlar doğrultusunda kullanılmaktadır:</p>
+                <ul>
+                    <li>Hesap oluşturma ve doğrulama işlemleri</li>
+                    <li>Ödeme ve para çekme taleplerini işleme</li>
+                    <li>Siteyi geliştirmek ve kullanıcı deneyimini iyileştirmek</li>
+                    <li>Kullanıcılara promosyonlar ve bonus fırsatları sunmak</li>
+                    <li>Müşteri desteği sağlamak</li>
+                </ul>
+
+                <h6>4. Bilgilerin Paylaşımı</h6>
+                <p>Kişisel bilgileriniz, üçüncü taraflarla yalnızca hizmet sağlamak, yasal zorunlulukları yerine getirmek veya dolandırıcılığı önlemek amacıyla paylaşılır. Bu üçüncü taraflar arasında ödeme sağlayıcıları, doğrulama hizmetleri ve hukuki merciler bulunmaktadır. Holiganbet, bilgilerinizi pazarlama amacıyla üçüncü şahıslarla paylaşmaz.</p>
+
+                <h6>5. Güvenlik Önlemleri</h6>
+                <p>Kişisel bilgilerinizin güvenliğini sağlamak için gelişmiş şifreleme yöntemleri ve güvenlik duvarları kullanıyoruz. Ayrıca, hassas verilerinizi korumak için düzenli güvenlik denetimleri yapmaktayız.</p>
+
+                <h6>6. Çerezler ve Takip Teknolojileri</h6>
+                <p>Çerezler, kullanıcıların site üzerindeki tercihlerini hatırlamak ve deneyimlerini kişiselleştirmek amacıyla kullanılır. Tarayıcınızın çerezleri kabul etmemesini sağlayabilirsiniz, ancak bu durumda site performansında düşüş yaşanabilir.</p>
+
+                <h6>7. Haklarınız</h6>
+                <p>Kullanıcılar, kişisel bilgilerine erişim, bu bilgileri düzeltme veya silme hakkına sahiptir. Hesabınızla ilgili bilgileri güncellemek için müşteri hizmetleriyle iletişime geçebilirsiniz. Hesabınızı kalıcı olarak silmek isterseniz, bu talebi müşteri desteği aracılığıyla iletebilirsiniz.</p>
+
+                <h6>8. Üçüncü Taraf Siteleri</h6>
+                <p>Sitemizde yer alan üçüncü taraf bağlantıları, farklı gizlilik politikalarına tabi olabilir. Bu sitelerle olan etkileşimleriniz sırasında, bu üçüncü taraf sitelerin gizlilik politikalarını incelemenizi öneririz.</p>
+
+                <h6>9. Gizlilik Politikası Değişiklikleri</h6>
+                <p>Holiganbet, bu gizlilik politikasında zaman zaman değişiklik yapma hakkını saklı tutar. Herhangi bir değişiklik olması durumunda, bu değişiklikler site üzerinden duyurulacak ve kullanıcılar bilgilendirilecektir.</p>
+
+                <h6>10. İletişim Bilgileri</h6>
+                <p>Bu gizlilik politikası hakkında herhangi bir sorunuz veya endişeniz varsa, bizimle <a href="mailto:destek@holiganbet.com" class="text-white">destek@holiganbet.com</a> üzerinden iletişime geçebilirsiniz.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    const app = Vue.createApp({
+        data() {
+            return {
+                step: 1,
+                formVisible: false,
+                selectedForm: null,
+                formFilled: false,
+                formFilled2: false,
+                showForm: false, // Controls form fade-in visibility
+            };
+        },
+        mounted() {
+            const canvas = document.querySelector('canvas')
+            const ctx = canvas.getContext('2d')
+
+            const hues = [180, 240, 300]
+            let huesIndex = 2
+            let hue = 120
+            const hueVariation = 60
+            const blur = 5
+            const acceleration = 1.02
+            const minSpeed = 0.3
+            const maxSpeed = 0.4
+
+            clearValue = 0.8
+
+            const linesCount = 100
+            const lines = [] 
+
+            const windowObj = 
+            {
+            width: window.innerWidth,
+            height: window.innerHeight,
+            center: 
+            {
+                x: window.innerWidth / 2,
+                y: window.innerHeight / 2
+            }
+            }
+
+            window.addEventListener('resize', onResize)
+
+            class Line 
+            {
+            constructor(options)
+            {  
+                this.x = options.x
+                this.y = options.y
+                
+                this.init()
+            }
+            
+            init()
+            { 
+                this.trailCount = 5
+                this.pos = []
+                
+                this.angle = getRandomFloat(0, Math.PI * 2)
+                this.speed = getRandomFloat(minSpeed,maxSpeed)
+                this.acceleration = acceleration
+
+                this.hue = getRandomInt(hue - hueVariation, hue + hueVariation)
+                this.brightness = getRandomFloat(60, 80)
+            }
+            
+            update()
+            {
+                this.pos.push({x: this.x, y: this.y})
+                if(this.pos.length > this.trailCount)
+                this.pos.shift()
+                
+                this.speed *= this.acceleration
+                
+                this.x += Math.cos(this.angle) * this.speed
+                this.y += Math.sin(this.angle) * this.speed
+                
+                if((this.x < 0 || this.x > windowObj.width) && (this.y < 0 || this.y > windowObj.height))
+                {
+                this.x = windowObj.center.x
+                this.y = windowObj.center.y
+                
+                this.init()
+                this.update()
+                }
+            }
+            
+            draw()
+            {
+                ctx.beginPath()
+                ctx.moveTo(this.pos[0].x, this.pos[0].y)
+                ctx.lineTo(this.x, this.y)
+                ctx.shadowBlur = blur
+                ctx.shadowColor = `white`
+                ctx.strokeStyle = `hsla(${this.hue}, 100%, ${this.brightness}%, 1)`
+                ctx.stroke()
+            }
+            }
+
+            // Init main scene
+            for(let i = 0; i < linesCount; i++)
+            {
+            setTimeout(() => 
+            {
+                const line = new Line({x: windowObj.center.x, y: windowObj.center.y})
+                lines.push(line)
+            }, getRandomInt(0, 4500))
+            }
+
+
+            // Global
+
+            function onResize() 
+            {
+            windowObj.width = window.innerWidth
+            windowObj.height = window.innerHeight
+            windowObj.center.x = windowObj.width / 2
+            windowObj.center.y = windowObj.height / 2
+            
+            canvas.width = windowObj.width
+            canvas.height = windowObj.height
+            }
+
+            function onTick()
+            {
+            ctx.globalCompositeOperation = 'destination-out'
+                ctx.fillStyle = `rgba(0, 0, 0, ${clearValue})`
+                ctx.fillRect(0, 0, canvas.width, canvas.height)
+            
+            ctx.globalCompositeOperation = 'lighter'
+            
+            for(let i = 0; i < lines.length; i++)
+            {
+                lines[i].update()
+                lines[i].draw()  
+            }
+            
+            window.requestAnimationFrame(onTick)
+            }
+
+            // Run
+
+            onResize()
+            onTick()
+
+
+            // Utils
+
+            function getRandomFloat(min, max) 
+            {
+                return Math.random() * (max - min) + min
+            }
+
+            function getRandomInt(min,max)
+            {
+                return Math.floor(Math.random() * (max - min + 1) + min)
+            }
+        },
+        methods: {
+            showMessage() {
+                setTimeout(() => {
+                    this.startNextStep();
+                }, 1400); // Trigger the next step after 1200ms
+            },
+            startNextStep() {
+                if (this.step + 1 == 2){
+                    this.nextStep = this.step + 1;
+                    this.showMessage();
+                }
+                this.nextStep = this.step + 1;
+                this.step = null; // This triggers the leave transition
+            },
+            handleAfterLeave() {
+                // After the leave transition ends, move to the next step
+                this.step = this.nextStep;
+            },
+            switchLeft() {
+                if (!this.formFilled) {
+                    this.selectedForm = 'support';
+                    this.formVisible = true;
+                // Add another small delay for the form to fade in
+                setTimeout(() => {
+                    this.showForm = true;
+                }, 500);
+                }
+            },
+            switchRight() {
+                if (!this.formFilled) {
+                    this.selectedForm = 'bonus';
+                    this.formVisible = true;
+                // Add another small delay for the form to fade in
+                setTimeout(() => {
+                    this.showForm = true;
+                }, 500);
+                }
+            },
+            validateForm() {
+                const processType = document.getElementById('dropdown').value;
+                const username = document.getElementById('username').value.trim();
+                const name = document.getElementById('name').value.trim();
+                const surname = document.getElementById('surname').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                const email = document.getElementById('email').value.trim();
+
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                const phonePattern = /^[0-9]{10,}$/;
+
+                let valid = true;
+                // Clear previous errors
+                document.querySelectorAll('small').forEach(error => error.innerText = '');
+
+                if (!processType) {
+                    document.querySelector('.errorDropdown').innerText = "Lütfen işlem türünü seçiniz.";
+                    valid = false;
+                }
+                if (!username) {
+                    document.querySelector('.errorUsername').innerText = "Kullanıcı adınızı giriniz.";
+                    valid = false;
+                }
+                if (!name) {
+                    document.querySelector('.errorName').innerText = "Adınızı giriniz.";
+                    valid = false;
+                }
+                if (!surname) {
+                    document.querySelector('.errorSurname').innerText = "Soyadınızı giriniz.";
+                    valid = false;
+                }
+                if (!phone || !phonePattern.test(phone)) {
+                    document.querySelector('.errorPhone').innerText = "Geçerli bir telefon numarası giriniz.";
+                    valid = false;
+                }
+                if (!email || !emailPattern.test(email)) {
+                    document.querySelector('.errorEmail').innerText = "Geçerli bir e-posta adresi giriniz.";
+                    valid = false;
+                }
+
+                if (valid) {
+                    this.formFilled = true;
+                }
+            },
+            validateForm2 () {
+                const email = document.getElementById('bonusEmail').value.trim();
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                let valid = true;
+                // Clear previous errors
+                document.querySelectorAll('small').forEach(error => error.innerText = '');
+
+                if (!email || !emailPattern.test(email)) {
+                    document.querySelector('.errorEmail2').innerText = "Geçerli bir e-posta adresi giriniz.";
+                    valid = false;
+                }
+
+                if (valid) {
+                    this.formFilled2 = true;
+                }
+            },
+        }
+    });
+
+    app.mount('#app');
+</script>
+</body>
+</html>
